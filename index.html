@@ -1,0 +1,149 @@
+8<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherSphere</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Animated Background -->
+    <div class="background">
+        
+    </div>
+
+    <!-- Main Card -->
+    <div class="container">
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Search city..."
+            >
+
+            <button id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button id="locationBtn">
+                <i class="fa-solid fa-location-crosshairs"></i>
+            </button>
+
+        </div>
+
+        <!-- Weather Content -->
+        <div class="weather">
+
+            <!-- City -->
+            <h1 id="city">New Delhi</h1>
+
+            <p id="date">Monday, 4 August</p>
+
+            <!-- Icon -->
+            <img
+                id="weatherIcon"
+                src=""
+                alt="Weather Icon"
+            >
+
+            <!-- Temperature -->
+            <h2>
+                <span id="temperature">29</span>°
+            </h2>
+
+            <p id="description">
+                Clear Sky
+            </p>
+
+            <!-- Extra Info -->
+            <div class="details">
+
+                <div class="card">
+
+                    <i class="fa-solid fa-droplet"></i>
+
+                    <h3 id="humidity">65%</h3>
+
+                    <p>Humidity</p>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-wind"></i>
+
+                    <h3 id="wind">12 km/h</h3>
+
+                    <p>Wind</p>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-temperature-half"></i>
+
+                    <h3 id="feelsLike">31°</h3>
+
+                    <p>Feels Like</p>
+
+                </div>
+
+            </div>
+
+            <!-- Sunrise / Sunset -->
+            <div class="sun-container">
+
+                <div class="sun-card">
+
+                    <i class="fa-solid fa-sun"></i>
+
+                    <div>
+                        <h4>Sunrise</h4>
+                        <span id="sunrise">06:02 AM</span>
+                    </div>
+
+                </div>
+
+                <div class="sun-card">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                    <div>
+                        <h4>Sunset</h4>
+                        <span id="sunset">07:15 PM</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Loader -->
+    <div id="loader" class="loader hidden"></div>
+
+    <!-- Error Message -->
+    <div id="error" class="error hidden">
+        City not found.
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
